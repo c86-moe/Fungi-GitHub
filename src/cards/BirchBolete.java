@@ -1,6 +1,6 @@
 package cards;
 
-class BirchBolete extends Mushroom {
+public class BirchBolete extends Mushroom {
     public static void main (String[] args){}
     public BirchBolete(){}
     public BirchBolete(CardType this_type){

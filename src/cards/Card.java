@@ -1,6 +1,6 @@
 package cards;
 
-public class Card {
+public public class Card {
     protected CardType type;
     protected String cardName;
 
