@@ -1,5 +1,4 @@
 package cards;
-import cards.CardType;
 
 public class Card {
     protected CardType type;
