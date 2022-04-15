@@ -6,6 +6,7 @@ public class LawyersWig extends Mushroom {
     public LawyersWig(CardType this_type){
         super(this_type,"lawyerswig");
         super.flavourPoints = 2;
+        super.sticksPerMushroom = 1;
         return;
     }
 }

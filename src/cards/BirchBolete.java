@@ -6,6 +6,7 @@ public class BirchBolete extends Mushroom {
     public BirchBolete(CardType this_type){
         super(this_type,"birchbolete");
         super.flavourPoints = 3;
+        super.sticksPerMushroom = 2;
         return;
     }
 }

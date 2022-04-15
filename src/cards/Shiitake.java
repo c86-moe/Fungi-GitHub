@@ -6,6 +6,7 @@ public class Shiitake extends Mushroom {
     public Shiitake(CardType this_type){
         super(this_type,"shittake");
         super.flavourPoints = 2;
+        super.sticksPerMushroom = 2;
         return;
     }
 }

@@ -6,6 +6,7 @@ public class TreeEar extends Mushroom {
     public TreeEar(CardType this_type){
         super(this_type,"treeear");
         super.flavourPoints = 1;
+        super.sticksPerMushroom = 2;
         return;
     }
 }

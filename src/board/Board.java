@@ -20,7 +20,7 @@ public class Board {
         return;
     }
 
-    public static CardPile getForestCardPile() {
+    public static CardPile getForestCardsPile() {
         return forestCardPile;
     }
 

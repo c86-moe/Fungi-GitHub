@@ -6,6 +6,7 @@ public class Porcini extends Mushroom {
     public Porcini(CardType this_type){
         super(this_type,"porcini");
         super.flavourPoints = 3;
+        super.sticksPerMushroom = 3;
         return;
     }
 }

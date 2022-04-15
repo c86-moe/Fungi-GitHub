@@ -6,6 +6,7 @@ public class Morel extends Mushroom {
     public Morel(CardType this_type){
         super(this_type,"morel");
         super.flavourPoints = 6;
+        super.sticksPerMushroom = 4;
         return;
     }
 }

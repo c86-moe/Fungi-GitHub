@@ -6,6 +6,7 @@ public class HenOfWoods extends Mushroom {
     public HenOfWoods(CardType this_type){
         super(this_type,"henofwoods");
         super.flavourPoints = 3;
+        super.sticksPerMushroom = 1;
         return;
     }
 }
