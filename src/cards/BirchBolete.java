@@ -1,3 +1,5 @@
+package cards;
+
 class BirchBolete extends Mushroom {
     public static void main (String[] args){}
     public BirchBolete(){}

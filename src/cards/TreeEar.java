@@ -1,3 +1,5 @@
+package cards;
+
 class TreeEar extends Mushroom {
     public static void main (String[] args){}
     public TreeEar(){}

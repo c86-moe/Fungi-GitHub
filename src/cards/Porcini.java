@@ -1,3 +1,5 @@
+package cards;
+
 class Porcini extends Mushroom {
     public static void main (String[] args){}
     public Porcini(){}

@@ -1,3 +1,5 @@
+package cards;
+
 class LawyersWig extends Mushroom {
     public static void main (String[] args){}
     public LawyersWig(){}

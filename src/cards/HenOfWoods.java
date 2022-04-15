@@ -1,3 +1,5 @@
+package cards;
+
 class HenOfWoods extends Mushroom {
     public static void main (String[] args){}
     public HenOfWoods(){}

@@ -1,3 +1,5 @@
+package cards;
+
 class HoneyFungus extends Mushroom {
     public static void main (String[] args){}
     public HoneyFungus(){}
