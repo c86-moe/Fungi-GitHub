@@ -63,7 +63,7 @@ public class Player {
         return true;
     }
 
-    public boolean cookMushRooms(ArrayList<Card>){
+    public boolean cookMushRooms(ArrayList<Card> this_array){
         new DelibrateError_16777218();
         return true;
     }
