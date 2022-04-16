@@ -17,10 +17,10 @@ public class CardList {
     }
 
     public Card getElementAt(int this_index){
-        return cList.get(this_index);
+        return cList.get(this_index-1);
     }
 
     public Card removeCardAt(int this_index){
-        return cList.remove(this_index);
+        return cList.remove(this_index-1);
     }
 }

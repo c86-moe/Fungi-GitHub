@@ -1,9 +1,8 @@
 package board;
 
 import java.util.Stack;
+import java.util.Random;
 import cards.*;
-
-import DelibrateError_268435846;
 
 public class CardPile {
     private Stack<Card> cPile = new Stack<Card>();
@@ -20,7 +19,16 @@ public class CardPile {
     }
 
     public void shufflePile() {
-        new DelibrateError_16777218();
+        final Random random = new Random();
+        int random_result;
+        Card temp;
+        for(int i = 0; i < cPile.size(); i++){
+            random_result = random.nextInt(cPile.size()-1);
+            temp = cPile.get(random_result);
+            cPile.remove(random_result);
+            cPile.add(i, temp);
+        }
+        return;
     }
 
     public int pileSize() {
