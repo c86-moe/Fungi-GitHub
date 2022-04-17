@@ -17,7 +17,7 @@ public class CardList {
     }
 
     public Card getElementAt(int this_index){
-        return cList.get(8-this_index);
+        return cList.get((cList.size()-1)-this_index);
     }
 
     public Card removeCardAt(int this_index){

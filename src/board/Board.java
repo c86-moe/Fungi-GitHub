@@ -77,16 +77,20 @@ public class Board {
     public static ArrayList<Card> getDecayPile() {
         return decayPile;
     }
-
+    
     public static void updateDecayPile(){
         if(decayPile.size() >= 4){
             decayPile.clear();
         }
         decayPile.add(forest.removeCardAt(1));
-        forest.removeCardAt(1);
-        while(forest.size() < 8 && forestCardPile.pileSize() >0){
-            forest.add(forestCardPile.drawCard());
-        }
+        //forest.removeCardAt(1);
+        //while(forest.size() < 8 && forestCardPile.pileSize() >0){
+        //    forest.add(forestCardPile.drawCard());
+        //}
         return;
+    }
+
+    public static Card removeFromForest(int index){
+        return forest.removeCardAt(index);  
     }
 }

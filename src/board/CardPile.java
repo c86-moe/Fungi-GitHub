@@ -23,10 +23,10 @@ public class CardPile {
         int random_result;
         Card temp;
         for(int i = 0; i < cPile.size(); i++){
-            random_result = random.nextInt(cPile.size()-1);
+            random_result = random.nextInt(cPile.size());
             temp = cPile.get(random_result);
             cPile.remove(random_result);
-            cPile.add(i, temp);
+            cPile.add(temp);
         }
         return;
     }

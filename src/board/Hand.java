@@ -13,9 +13,12 @@ public class Hand implements Displayable {
         return handList.size();
     }
     public Card getElementAt(int this_location){
-        return handList.get(this_location-1);
+        return handList.get(this_location);
     }
     public Card removeElement(int this_element){
-        return handList.remove(this_element-1);
+        return handList.remove(this_element);
+    }
+    public void removeElement(Card this_card){
+        handList.remove(this_card);
     }
 }
