@@ -196,7 +196,7 @@ public class Player {
         return true;
     }
 
-    // Not working...
+    // Working!
     public boolean sellMushrooms(String this_type_str, int this_quantity){
         if(this_quantity<2){
             //System.out.println("Too few items to sell.");
