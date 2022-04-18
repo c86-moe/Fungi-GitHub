@@ -75,7 +75,7 @@ public class Player {
         return;
     }
 
-    // Tests not passing.
+    // Tests passed.
     public boolean takeCardFromTheForest(int this_index){
         if(this_index<=0 || this_index>Board.getForest().size()){
             return false;
