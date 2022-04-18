@@ -47,7 +47,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[5] 5[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[6] 6[0m [32m✔[0m
 [36m│  │  │  └─[0m [31m[7] 7[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  ├─[0m [31mdecayWithBaskets_1()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
+[36m│  │  ├─[0m [34mdecayWithBaskets_1()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_2()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_3()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_4()[0m [32m✔[0m
@@ -153,11 +153,11 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] 2[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[3] 3[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[4] 4[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
+[36m│  │  │  └─[0m [34m[4] 4[0m [32m✔[0m
 [36m│  │  ├─[0m [36mdecayLegit_2(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[2] 2[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
-[36m│  │  ├─[0m [31mdecayLegit_3()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
+[36m│  │  │  └─[0m [34m[2] 2[0m [32m✔[0m
+[36m│  │  ├─[0m [34mdecayLegit_3()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mdecayLegit_4(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [31m[1] 1[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  │  └─[0m [31m[2] 2[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
@@ -368,7 +368,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m      ├─[0m [34mnumberOfDayMushroomCardsAfterCardSetUp[0m [32m✔[0m
 [36m      └─[0m [34mnumberOfDayMushroomCardsBeforeCardSetUp[0m [32m✔[0m
 
-Failures (66):
+Failures (62):
   JUnit Jupiter:PlayerTest:sellMushrooms1Night(String):[1] hen of woods
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1Night', methodParameterTypes = 'java.lang.String']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -452,20 +452,6 @@ Failures (66):
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
        org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       [...]
-  JUnit Jupiter:PlayerTest:decayWithBaskets_1()
-    MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBaskets_1', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
-       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
-       board.PlayerTest.decayWithBaskets_1(PlayerTest.java:509)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:decayWithBaskets_5()
     MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBaskets_5', methodParameterTypes = '']
@@ -887,48 +873,6 @@ Failures (66):
        org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
        org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
        [...]
-  JUnit Jupiter:PlayerTest:decayLegit_1(int):[4] 4
-    MethodSource [className = 'board.PlayerTest', methodName = 'decayLegit_1', methodParameterTypes = 'int']
-    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
-       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
-       board.PlayerTest.decayLegit_1(PlayerTest.java:383)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       [...]
-  JUnit Jupiter:PlayerTest:decayLegit_2(int):[2] 2
-    MethodSource [className = 'board.PlayerTest', methodName = 'decayLegit_2', methodParameterTypes = 'int']
-    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
-       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
-       board.PlayerTest.decayLegit_2(PlayerTest.java:413)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       [...]
-  JUnit Jupiter:PlayerTest:decayLegit_3()
-    MethodSource [className = 'board.PlayerTest', methodName = 'decayLegit_3', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
-       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
-       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
-       board.PlayerTest.decayLegit_3(PlayerTest.java:432)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       [...]
   JUnit Jupiter:PlayerTest:decayLegit_4(int):[1] 1
     MethodSource [className = 'board.PlayerTest', methodName = 'decayLegit_4', methodParameterTypes = 'int']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -1294,7 +1238,7 @@ Failures (66):
        org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
 
-Test run finished after 367 ms
+Test run finished after 369 ms
 [        55 containers found      ]
 [         0 containers skipped    ]
 [        55 containers started    ]
@@ -1305,6 +1249,6 @@ Test run finished after 367 ms
 [         0 tests skipped         ]
 [       310 tests started         ]
 [         0 tests aborted         ]
-[       244 tests successful      ]
-[        66 tests failed          ]
+[       248 tests successful      ]
+[        62 tests failed          ]
 

@@ -75,7 +75,7 @@ public class Player {
         return;
     }
 
-    // Working.
+    // Tests not passing.
     public boolean takeCardFromTheForest(int this_index){
         int sticksRequired = 0;
         if(this_index > 2){
@@ -106,16 +106,16 @@ public class Player {
         return true;
     }
 
-    // Working.
+    // Tests not passing.
     public boolean takeFromDecay(){
         int numBaskets = 0;
         ArrayList<Card> decayPile = Board.getDecayPile();
-        for(int i=0;i<decayPile.size();i++){
-            if(decayPile.get(i).getType()==CardType.BASKET){
+        for(Card c : decayPile){
+            if(c.getType()==CardType.BASKET){
                 numBaskets++;
             }
         }
-        if((handlimit+2*numBaskets)>(h.size()+decayPile.size()-numBaskets)){
+        if((handlimit+numBaskets*2)>=(h.size()+decayPile.size()-numBaskets)){
             for(Card c : decayPile){
                 if(c.getType()==CardType.BASKET){
                     addCardtoDisplay(c);
@@ -130,7 +130,7 @@ public class Player {
         }
     }
 
-    // Untested...
+    // Tests not passing.
     public boolean cookMushrooms(ArrayList<Card> this_array){
         boolean panInList = false;
         boolean panInDisplay = false;
@@ -196,7 +196,7 @@ public class Player {
         return true;
     }
 
-    // Working!
+    // Tests not passing.
     public boolean sellMushrooms(String this_type_str, int this_quantity){
         if(this_quantity<2){
             //System.out.println("Too few items to sell.");
