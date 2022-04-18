@@ -57,7 +57,7 @@ public class Board {
         for(int i = 0; i < 3; i++) {
             forestCardPile.addCard(new Cider());
         }
-        for(int i = 0; i < 13; i++) {
+        for(int i = 0; i < 11; i++) {
             forestCardPile.addCard(new Pan());
         }
         for(int i = 0; i < 5; i++) {

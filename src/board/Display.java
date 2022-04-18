@@ -13,9 +13,15 @@ public class Display implements Displayable {
         return displayList.size();
     }
     public Card getElementAt(int this_location){
+        if(this_location<0 || this_location >= displayList.size()){
+            return null;
+        }
         return displayList.get(this_location);
     }
     public Card removeElement(int this_element){
+        if(this_element<0 || this_element >= displayList.size()){
+            return null;
+        }
         return displayList.remove(this_element);
     }
 }

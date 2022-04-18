@@ -205,11 +205,11 @@ public class Player {
         boolean hasNight=false;
         int typeCount = 0;
         // For some unknown reason, strings does not match.
-        System.out.println("Looking for: "+this_type_str);
+        // System.out.println("Looking for: "+this_type_str);
         for(int i=0;i<h.size();i++){
-            System.out.println(h.getElementAt(i).getName());
+            // System.out.println(h.getElementAt(i).getName());
             if(h.getElementAt(i).getName().equals(this_type_str)){
-                System.out.println("Mushroom named found.");
+                // System.out.println("Mushroom named found.");
                 if(h.getElementAt(i).getType()==CardType.DAYMUSHROOM){
                     typeCount++;
                 }
@@ -220,7 +220,7 @@ public class Player {
             }
         }
         if(typeCount<this_quantity){
-            System.out.println("Not enough items to sell.");
+            // System.out.println("Not enough items to sell.");
             return false;
         }
 
@@ -253,7 +253,7 @@ public class Player {
                 }
             }
         }
-        System.out.println("Unable to process.");
+        // System.out.println("Unable to process.");
         return false;
     }
 
