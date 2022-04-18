@@ -23,13 +23,13 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [31m[1] hen of woods[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  │  ├─[0m [31m[2] birch bolete[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  │  └─[0m [34m[3] porcini[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsCiderandButterNotEnough()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [34mcookMushroomsCiderandButterNotEnough()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookMushroomsEnoughPanonHandScoreBB_NoPan()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookNightMushrooms2DNonEd()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsCiderandButterScore()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [31mcookMushroomsCiderandButterScore()[0m [31m✘[0m [31mexpected: <0> but was: <-35>[0m
 [36m│  │  ├─[0m [34mpanDown_twoPans()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookNightMushrooms1NonEd()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookNightMushrooms2NonEd()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [34mcookNightMushrooms2NonEd()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookNightMushrooms1noPan()[0m [32m✔[0m
 [36m│  │  ├─[0m [36msellMushrooms(String)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] henofwoods[0m [32m✔[0m
@@ -46,7 +46,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[4] 4[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[5] 5[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[6] 6[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[7] 7[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  │  └─[0m [34m[7] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_1()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_2()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_3()[0m [32m✔[0m
@@ -58,7 +58,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [34msellMushrooms_notExistingMushroom1()[0m [32m✔[0m
 [36m│  │  ├─[0m [34msellMushrooms_notExistingMushroom2()[0m [32m✔[0m
 [36m│  │  ├─[0m [34msellMushrooms_notExistingMushroom3()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsCider()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [31mcookMushroomsCider()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [36mdecayWithBasketsHandLimit(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] 2[0m [32m✔[0m
@@ -91,15 +91,15 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[2] 4[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[3] 5[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[4] 6[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[5] 7[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  │  └─[0m [34m[5] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_37_checksticks(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 3[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] 4[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[3] 5[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[4] 6[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[5] 7[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  │  └─[0m [34m[5] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [31mcookNightMushrooms1()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
-[36m│  │  ├─[0m [31mcookNightMushrooms2()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [31mcookNightMushrooms2()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [34mcookNightMushrooms3()[0m [32m✔[0m
 [36m│  │  ├─[0m [36msellMushrooms1Mixed1(String)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [31m[1] hen of woods[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
@@ -113,15 +113,15 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[1] hen of woods[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] birch bolete[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[3] porcini[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsCiderandButter()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [31mcookMushroomsCiderandButter()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [34mcookMushroomsEnoughPanonHandScoreHF_NoPan()[0m [32m✔[0m
 [36m│  │  ├─[0m [36msellMushrooms2(String)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [31m[1] hen of woods[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  │  ├─[0m [31m[2] birch bolete[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  │  ├─[0m [34m[3] porcini[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[4] morel[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsCidreNotEnough1()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  ├─[0m [31mcookMushroomsCidreNotEnough2()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [34mcookMushroomsCidreNotEnough1()[0m [32m✔[0m
+[36m│  │  ├─[0m [34mcookMushroomsCidreNotEnough2()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_17_checkhand_basket(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] 2[0m [32m✔[0m
@@ -129,7 +129,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[4] 4[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[5] 5[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[6] 6[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[7] 7[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  │  └─[0m [34m[7] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonHandScoreBB()[0m [31m✘[0m [31mexpected: <0> but was: <-9>[0m
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonHandScoreCH()[0m [31m✘[0m [31mexpected: <0> but was: <-12>[0m
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonHandScoreHF()[0m [31m✘[0m [31mexpected: <0> but was: <-3>[0m
@@ -137,8 +137,8 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonHandScoreSH()[0m [31m✘[0m [31mexpected: <0> but was: <-6>[0m
 [36m│  │  ├─[0m [34mpanDown_onePan_PanRemovedfromHand()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookNotEnoughMushrooms()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsButterNotEnough1()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  ├─[0m [31mtakeFromForest_position3_1stick_checksticks()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [34mcookMushroomsButterNotEnough1()[0m [32m✔[0m
+[36m│  │  ├─[0m [34mtakeFromForest_position3_1stick_checksticks()[0m [32m✔[0m
 [36m│  │  ├─[0m [36msellMushroomsCheckHand1(String)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] henofwoods[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] birchbolete[0m [32m✔[0m
@@ -165,7 +165,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [31m[1] 1[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  │  └─[0m [31m[2] 2[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [34mpanDown_onePan()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mtakeFromForest_position3_1stick()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [34mtakeFromForest_position3_1stick()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_position12_5sticks(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[2] 2[0m [32m✔[0m
@@ -229,11 +229,11 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [31msellMushrooms1NightSticks2D()[0m [31m✘[0m [31mexpected: <0> but was: <-4>[0m
 [36m│  │  ├─[0m [34msellMushrooms1NightSticks3D()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mpanDown_noPan()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookNightMushrooms1D()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [31mcookNightMushrooms1D()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [31mcookNightMushrooms2D()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [34mpanDown_onePan_PanOnDisplay()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsButter1()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  ├─[0m [31mcookMushroomsButter2()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [31mcookMushroomsButter1()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
+[36m│  │  ├─[0m [31mcookMushroomsButter2()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [36mtakeFromForest_position12(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[2] 2[0m [32m✔[0m
@@ -309,7 +309,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[2] 4[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[3] 5[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[4] 6[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[5] 7[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  │  └─[0m [34m[5] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [34msellMushroomsSticks1D()[0m [32m✔[0m
 [36m│  │  ├─[0m [34msellMushroomsSticks2D()[0m [32m✔[0m
 [36m│  │  ├─[0m [34msellMushroomsSticks3D()[0m [32m✔[0m
@@ -317,9 +317,9 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [36mtakeFromForest_12_checksticks(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[2] 2[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookNightMushrooms1DNonEd()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  ├─[0m [31mcookMushroomsCiderScore()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  ├─[0m [31mcookMushroomsEnoughPanonDisplay()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [34mcookNightMushrooms1DNonEd()[0m [32m✔[0m
+[36m│  │  ├─[0m [31mcookMushroomsCiderScore()[0m [31m✘[0m [31mexpected: <0> but was: <-20>[0m
+[36m│  │  ├─[0m [31mcookMushroomsEnoughPanonDisplay()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [36mtakeFromForest_17_checkhand(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] 2[0m [32m✔[0m
@@ -327,7 +327,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[4] 4[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[5] 5[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[6] 6[0m [32m✔[0m
-[36m│  │  │  └─[0m [31m[7] 7[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  │  └─[0m [34m[7] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookMushroomsNotEnough0withPanonD()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookMushroomsNotEnough0withPanonH()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_17_checkhand_fail_hsize(int)[0m [32m✔[0m
@@ -339,9 +339,9 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[6] 6[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[7] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayPileUpdateWhenFull()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mcookMushroomsButter1Score()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  ├─[0m [31mcookMushroomsButter2Score()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
-[36m│  │  └─[0m [31mcookMushroomsEnoughPanonDisplayNonEd()[0m [31m✘[0m [31mCannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null[0m
+[36m│  │  ├─[0m [31mcookMushroomsButter1Score()[0m [31m✘[0m [31mexpected: <0> but was: <-15>[0m
+[36m│  │  ├─[0m [31mcookMushroomsButter2Score()[0m [31m✘[0m [31mexpected: <0> but was: <-18>[0m
+[36m│  │  └─[0m [34mcookMushroomsEnoughPanonDisplayNonEd()[0m [32m✔[0m
 [36m│  ├─[0m [36mMorelTest[0m [32m✔[0m
 [36m│  │  ├─[0m [34mtestSticksDay()[0m [32m✔[0m
 [36m│  │  └─[0m [34mtestFlavourDay()[0m [32m✔[0m
@@ -368,7 +368,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m      ├─[0m [34mnumberOfDayMushroomCardsAfterCardSetUp[0m [32m✔[0m
 [36m      └─[0m [34mnumberOfDayMushroomCardsBeforeCardSetUp[0m [32m✔[0m
 
-Failures (62):
+Failures (47):
   JUnit Jupiter:PlayerTest:sellMushrooms1Night(String):[1] hen of woods
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1Night', methodParameterTypes = 'java.lang.String']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -397,61 +397,19 @@ Failures (62):
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
-  JUnit Jupiter:PlayerTest:cookMushroomsCiderandButterNotEnough()
-    MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCiderandButterNotEnough', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsCiderandButterNotEnough(PlayerTest.java:1316)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCiderandButterScore()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCiderandButterScore', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsCiderandButterScore(PlayerTest.java:1538)
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-35>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.cookMushroomsCiderandButterScore(PlayerTest.java:1540)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
-  JUnit Jupiter:PlayerTest:cookNightMushrooms2NonEd()
-    MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms2NonEd', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookNightMushrooms2NonEd(PlayerTest.java:1256)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_17_checkhandmaxsize_basket(int):[7] 7
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_17_checkhandmaxsize_basket', methodParameterTypes = 'int']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_17_checkhandmaxsize_basket(PlayerTest.java:330)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
        [...]
   JUnit Jupiter:PlayerTest:decayWithBaskets_5()
     MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBaskets_5', methodParameterTypes = '']
@@ -497,17 +455,17 @@ Failures (62):
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCider()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCider', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
+    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsCider(PlayerTest.java:1297)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreBB_N()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreBB_N', methodParameterTypes = '']
@@ -579,34 +537,6 @@ Failures (62):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_position3to7_5sticks(int):[5] 7
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position3to7_5sticks', methodParameterTypes = 'int']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_position3to7_5sticks(PlayerTest.java:219)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_37_checksticks(int):[5] 7
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_37_checksticks', methodParameterTypes = 'int']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_37_checksticks(PlayerTest.java:264)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms1()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms1', methodParameterTypes = '']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -623,17 +553,17 @@ Failures (62):
        [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms2()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms2', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
+    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookNightMushrooms2(PlayerTest.java:1190)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1Mixed1(String):[1] hen of woods
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1Mixed1', methodParameterTypes = 'java.lang.String']
@@ -693,17 +623,17 @@ Failures (62):
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCiderandButter()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCiderandButter', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
+    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsCiderandButter(PlayerTest.java:1307)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms2(String):[1] hen of woods
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms2', methodParameterTypes = 'java.lang.String']
@@ -732,48 +662,6 @@ Failures (62):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       [...]
-  JUnit Jupiter:PlayerTest:cookMushroomsCidreNotEnough1()
-    MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCidreNotEnough1', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsCidreNotEnough1(PlayerTest.java:1332)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
-  JUnit Jupiter:PlayerTest:cookMushroomsCidreNotEnough2()
-    MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCidreNotEnough2', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsCidreNotEnough2(PlayerTest.java:1340)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_17_checkhand_basket(int):[7] 7
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_17_checkhand_basket', methodParameterTypes = 'int']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_17_checkhand_basket(PlayerTest.java:319)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreBB()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreBB', methodParameterTypes = '']
@@ -845,34 +733,6 @@ Failures (62):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
-  JUnit Jupiter:PlayerTest:cookMushroomsButterNotEnough1()
-    MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsButterNotEnough1', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsButterNotEnough1(PlayerTest.java:1324)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_position3_1stick_checksticks()
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position3_1stick_checksticks', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_position3_1stick_checksticks(PlayerTest.java:253)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       [...]
   JUnit Jupiter:PlayerTest:decayLegit_4(int):[1] 1
     MethodSource [className = 'board.PlayerTest', methodName = 'decayLegit_4', methodParameterTypes = 'int']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -928,20 +788,6 @@ Failures (62):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_position3_1stick()
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position3_1stick', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_position3_1stick(PlayerTest.java:233)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks2D()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks2D', methodParameterTypes = '']
@@ -1043,17 +889,17 @@ Failures (62):
        [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms1D()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms1D', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
+    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookNightMushrooms1D(PlayerTest.java:1197)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms2D()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms2D', methodParameterTypes = '']
@@ -1071,31 +917,31 @@ Failures (62):
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter1()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsButter1', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
+    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsButter1(PlayerTest.java:1279)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter2()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsButter2', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
+    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsButter2(PlayerTest.java:1288)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks2()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks2', methodParameterTypes = '']
@@ -1125,120 +971,64 @@ Failures (62):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_37_checkdisplay_basket(int):[5] 7
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_37_checkdisplay_basket', methodParameterTypes = 'int']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_37_checkdisplay_basket(PlayerTest.java:308)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       [...]
-  JUnit Jupiter:PlayerTest:cookNightMushrooms1DNonEd()
-    MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms1DNonEd', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookNightMushrooms1DNonEd(PlayerTest.java:1232)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCiderScore()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCiderScore', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsCiderScore(PlayerTest.java:1525)
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-20>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.cookMushroomsCiderScore(PlayerTest.java:1527)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonDisplay()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonDisplay', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
+    => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsEnoughPanonDisplay(PlayerTest.java:1165)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
-  JUnit Jupiter:PlayerTest:takeFromForest_17_checkhand(int):[7] 7
-    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_17_checkhand', methodParameterTypes = 'int']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.removeSticks(Player.java:42)
-       board.Player.takeCardFromTheForest(Player.java:103)
-       board.PlayerTest.takeFromForest_17_checkhand(PlayerTest.java:287)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter1Score()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsButter1Score', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsButter1Score(PlayerTest.java:1501)
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-15>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.cookMushroomsButter1Score(PlayerTest.java:1503)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter2Score()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsButter2Score', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsButter2Score(PlayerTest.java:1513)
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-18>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.cookMushroomsButter2Score(PlayerTest.java:1515)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
-       [...]
-  JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonDisplayNonEd()
-    MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonDisplayNonEd', methodParameterTypes = '']
-    => java.lang.NullPointerException: Cannot invoke "cards.Card.getType()" because the return value of "board.Display.getElementAt(int)" is null
-       board.Player.cookMushrooms(Player.java:173)
-       board.PlayerTest.cookMushroomsEnoughPanonDisplayNonEd(PlayerTest.java:1271)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
-       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
-       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
        [...]
 
-Test run finished after 369 ms
+Test run finished after 364 ms
 [        55 containers found      ]
 [         0 containers skipped    ]
 [        55 containers started    ]
@@ -1249,6 +1039,6 @@ Test run finished after 369 ms
 [         0 tests skipped         ]
 [       310 tests started         ]
 [         0 tests aborted         ]
-[       248 tests successful      ]
-[        62 tests failed          ]
+[       263 tests successful      ]
+[        47 tests failed          ]
 

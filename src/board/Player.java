@@ -38,7 +38,7 @@ public class Player {
 
     public void removeSticks(int num_sticks){
         sticks -= num_sticks;
-        for(int i=1;i<=d.size();i++){
+        for(int i=0;i<d.size();i++){
             if(d.getElementAt(i).getType()==CardType.STICK){
                 d.removeElement(i);
                 i--;
@@ -77,6 +77,10 @@ public class Player {
 
     // Tests not passing.
     public boolean takeCardFromTheForest(int this_index){
+        if(this_index<=0 || this_index>Board.getForest().size()){
+            return false;
+        }
+
         int sticksRequired = 0;
         if(this_index > 2){
             // Need sticks
@@ -102,7 +106,6 @@ public class Player {
         if(sticksRequired>0){
             removeSticks(sticksRequired);
         }
-        
         return true;
     }
 
@@ -169,7 +172,7 @@ public class Player {
                 numButter++;
             }
         }
-        for(int i=1;i<=d.size();i++){
+        for(int i=0;i<d.size();i++){
             if(d.getElementAt(i).getType()==CardType.PAN){
                 panInDisplay = true;
                 break;
