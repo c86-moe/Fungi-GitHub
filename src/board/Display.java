@@ -24,4 +24,7 @@ public class Display implements Displayable {
         }
         return displayList.remove(this_element);
     }
+    public void removeElement(Card this_card){
+        displayList.remove(this_card);
+    }
 }
