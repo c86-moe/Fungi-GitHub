@@ -235,6 +235,8 @@ public class Player {
 
     // Tests not passing.
     public boolean sellMushrooms(String this_type_str, int this_quantity){
+        this_type_str = this_type_str.toLowerCase();
+        this_type_str = this_type_str.replaceAll("\\s","");
         if(this_quantity<2){
             //System.out.println("Too few items to sell.");
             return false;
@@ -249,15 +251,15 @@ public class Player {
                 // System.out.println("Mushroom named found.");
                 if(h.getElementAt(i).getType()==CardType.DAYMUSHROOM){
                     typeCount++;
-                }
-                if(h.getElementAt(i).getType()==CardType.NIGHTMUSHROOM){
+                } else if(h.getElementAt(i).getType()==CardType.NIGHTMUSHROOM){
                     typeCount+=2;
                     hasNight=true;
+                } else {
+                    return false;
                 }
             }
         }
         if(typeCount<this_quantity){
-            // System.out.println("Not enough items to sell.");
             return false;
         }
 
