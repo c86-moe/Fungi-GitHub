@@ -156,7 +156,7 @@ public class Player {
         }
     }
 
-    // Tests not passing.
+    // Tests passed.
     public boolean cookMushrooms(ArrayList<Card> this_array){
         boolean panInList = false;
         boolean panInDisplay = false;
@@ -167,26 +167,25 @@ public class Player {
 
         for(Card c : this_array){
             if(c.getType()==CardType.PAN){
-                if(panInList){
+                if(!panInList){
                     panInList = true;
                 } else {
                     return false;
                 }
-            }
-            if(c.getType()==CardType.DAYMUSHROOM){
-                if(mushroomName!="undefined"&&mushroomName!=c.getName()){
+            } else if(c.getType()==CardType.DAYMUSHROOM){
+                if(mushroomName!="undefined"&&!mushroomName.equals(c.getName())){
                     return false;
                 }else{
                     mushroomName=c.getName();
+                    numMushrooms++;
                 }
-                numMushrooms++;
             } else if(c.getType()==CardType.NIGHTMUSHROOM){
-                if(mushroomName!="undefined"&&mushroomName!=c.getName()){
+                if(mushroomName!="undefined"&&!mushroomName.equals(c.getName())){
                     return false;
                 }else{
                     mushroomName=c.getName();
+                    numMushrooms+=2;
                 }
-                numMushrooms+=2;
             } else if(c.getType()==CardType.CIDER){
                 numCider++;
             } else if(c.getType()==CardType.BUTTER){
@@ -216,8 +215,7 @@ public class Player {
         for(Card c : this_array){
             if(c.getType() != CardType.PAN){
                 if(c.getType()==CardType.NIGHTMUSHROOM){
-                    score += ((EdibleItem)c).getFlavourPoints();
-                    score += ((EdibleItem)c).getFlavourPoints();
+                    score += ((EdibleItem)c).getFlavourPoints()*2;
                 }else{
                     score += ((EdibleItem)c).getFlavourPoints();
                 }
