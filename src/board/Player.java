@@ -180,36 +180,37 @@ public class Player {
                     mushroomName=c.getName();
                 }
                 numMushrooms++;
-            }
-            if(c.getType()==CardType.NIGHTMUSHROOM){
+            } else if(c.getType()==CardType.NIGHTMUSHROOM){
                 if(mushroomName!="undefined"&&mushroomName!=c.getName()){
                     return false;
                 }else{
                     mushroomName=c.getName();
                 }
                 numMushrooms+=2;
-            }
-            if(c.getType()==CardType.CIDER){
+            } else if(c.getType()==CardType.CIDER){
                 numCider++;
-            }
-            if(c.getType()==CardType.CIDER){
+            } else if(c.getType()==CardType.CIDER){
                 numButter++;
+            } else {
+                return false;
             }
         }
-        for(int i=0;i<d.size();i++){
-            if(d.getElementAt(i).getType()==CardType.PAN){
-                panInDisplay = true;
-                break;
+        if(!panInList){
+            for(int i=0;i<d.size();i++){
+                if(d.getElementAt(i).getType()==CardType.PAN){
+                    panInDisplay = true;
+                    break;
+                }
             }
         }
         // Eligiability Check:
-        if(!panInDisplay && !panInList){
+        if((panInDisplay||panInList)==false){
             return false;
         }
         if(numMushrooms<3){
             return false;
         }
-        if(numMushrooms<(4*numButter+5*numCider)){
+        if(numMushrooms<(numButter*4+numCider*5)){
             return false;
         }
         for(Card c : this_array){
