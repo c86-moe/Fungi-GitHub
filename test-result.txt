@@ -1,32 +1,3 @@
-Decay True : hl=8bk=1hs=8ds=3
-Hand limit reached. Cannot add card to hand.
-Hand limit reached. Cannot add card to hand.
-Decay True : hl=8bk=1hs=8ds=3
-Decay True : hl=8bk=1hs=6ds=4
-Decay True : hl=10bk=1hs=8ds=4
-Decay True : hl=10bk=1hs=9ds=4
-Decay True : hl=10bk=1hs=10ds=3
-Decay True : hl=8bk=1hs=8ds=1
-Decay True : hl=8bk=2hs=8ds=2
-Decay True : hl=8bk=3hs=8ds=3
-Decay True : hl=8bk=4hs=8ds=4
-Hand limit reached. Cannot add card to hand.
-Hand limit reached. Cannot add card to hand.
-Hand limit reached. Cannot add card to hand.
-Decay True : hl=8bk=0hs=4ds=1
-Decay True : hl=8bk=0hs=4ds=2
-Decay True : hl=8bk=0hs=4ds=3
-Decay True : hl=8bk=0hs=4ds=4
-Decay True : hl=8bk=0hs=6ds=1
-Decay True : hl=8bk=0hs=6ds=2
-Decay True : hl=8bk=0hs=7ds=1
-Decay True : hl=10bk=0hs=8ds=1
-Decay True : hl=10bk=0hs=8ds=2
-Decay True : hl=12bk=0hs=10ds=1
-Decay True : hl=12bk=0hs=10ds=2
-Hand limit reached. Cannot add card to hand.
-Hand limit reached. Cannot add card to hand.
-Hand limit reached. Cannot add card to hand.
 
 Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 
@@ -74,7 +45,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[6] 6[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[7] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_1()[0m [32m✔[0m
-[36m│  │  ├─[0m [31mdecayWithBaskets_2()[0m [31m✘[0m [31mexpected: <false> but was: <true>[0m
+[36m│  │  ├─[0m [34mdecayWithBaskets_2()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_3()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_4()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mdecayWithBaskets_5()[0m [32m✔[0m
@@ -377,10 +348,10 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  ├─[0m [36mChanterelleTest[0m [32m✔[0m
 [36m│  │  ├─[0m [34mtestSticksDay()[0m [32m✔[0m
 [36m│  │  └─[0m [34mtestFlavourDay()[0m [32m✔[0m
-[36m│  ├─[0m [36mHoneyFungusTest[0m [32m✔[0m
+[36m│  ├─[0m [36mLawyersWigTest[0m [32m✔[0m
 [36m│  │  ├─[0m [34mtestSticksDay()[0m [32m✔[0m
 [36m│  │  └─[0m [34mtestFlavourDay()[0m [32m✔[0m
-[36m│  └─[0m [36mLawyersWigTest[0m [32m✔[0m
+[36m│  └─[0m [36mHoneyFungusTest[0m [32m✔[0m
 [36m│     ├─[0m [34mtestSticksDay()[0m [32m✔[0m
 [36m│     └─[0m [34mtestFlavourDay()[0m [32m✔[0m
 [36m└─[0m [36mJUnit Vintage[0m [32m✔[0m
@@ -397,7 +368,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m      ├─[0m [34mnumberOfDayMushroomCardsAfterCardSetUp[0m [32m✔[0m
 [36m      └─[0m [34mnumberOfDayMushroomCardsBeforeCardSetUp[0m [32m✔[0m
 
-Failures (41):
+Failures (40):
   JUnit Jupiter:PlayerTest:sellMushrooms1Night(String):[1] hen of woods
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1Night', methodParameterTypes = 'java.lang.String']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -407,9 +378,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms1Night(PlayerTest.java:789)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1Night(String):[2] birch bolete
@@ -421,9 +392,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms1Night(PlayerTest.java:789)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCiderandButterScore()
@@ -436,23 +407,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsCiderandButterScore(PlayerTest.java:1540)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       [...]
-  JUnit Jupiter:PlayerTest:decayWithBaskets_2()
-    MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBaskets_2', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:40)
-       org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:35)
-       org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:210)
-       board.PlayerTest.decayWithBaskets_2(PlayerTest.java:519)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
-       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCider()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCider', methodParameterTypes = '']
@@ -463,9 +420,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsCider(PlayerTest.java:1297)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreBB_N()
@@ -478,9 +435,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreBB_N(PlayerTest.java:1469)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreCH_N()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreCH_N', methodParameterTypes = '']
@@ -492,9 +449,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreCH_N(PlayerTest.java:1480)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreHF_N()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreHF_N', methodParameterTypes = '']
@@ -506,9 +463,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreHF_N(PlayerTest.java:1447)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreMO_N()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreMO_N', methodParameterTypes = '']
@@ -520,9 +477,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreMO_N(PlayerTest.java:1491)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreSH_N()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreSH_N', methodParameterTypes = '']
@@ -534,9 +491,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreSH_N(PlayerTest.java:1458)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms1()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms1', methodParameterTypes = '']
@@ -547,9 +504,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookNightMushrooms1(PlayerTest.java:1183)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms2()
@@ -561,9 +518,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookNightMushrooms2(PlayerTest.java:1190)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1Mixed1(String):[1] hen of woods
@@ -575,9 +532,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms1Mixed1(PlayerTest.java:796)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1Mixed1(String):[2] birch bolete
@@ -589,9 +546,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms1Mixed1(PlayerTest.java:796)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1Mixed2(String):[1] hen of woods
@@ -603,9 +560,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms1Mixed2(PlayerTest.java:803)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1Mixed2(String):[2] birch bolete
@@ -617,9 +574,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms1Mixed2(PlayerTest.java:803)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCiderandButter()
@@ -631,9 +588,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsCiderandButter(PlayerTest.java:1307)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms2(String):[1] hen of woods
@@ -645,9 +602,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms2(PlayerTest.java:781)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms2(String):[2] birch bolete
@@ -659,9 +616,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.sellMushrooms2(PlayerTest.java:781)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreBB()
@@ -674,9 +631,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreBB(PlayerTest.java:1388)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreCH()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreCH', methodParameterTypes = '']
@@ -688,9 +645,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreCH(PlayerTest.java:1407)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreHF()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreHF', methodParameterTypes = '']
@@ -702,9 +659,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreHF(PlayerTest.java:1350)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreMO()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreMO', methodParameterTypes = '']
@@ -716,9 +673,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreMO(PlayerTest.java:1427)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreSH()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreSH', methodParameterTypes = '']
@@ -730,9 +687,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreSH(PlayerTest.java:1369)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks2D()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks2D', methodParameterTypes = '']
@@ -744,9 +701,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1MixedNightSticks2D(PlayerTest.java:1007)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks5D()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks5D', methodParameterTypes = '']
@@ -758,9 +715,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1MixedNightSticks5D(PlayerTest.java:1032)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHand()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHand', methodParameterTypes = '']
@@ -771,9 +728,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsEnoughPanonHand(PlayerTest.java:1158)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1NightSticks1()
@@ -786,9 +743,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1NightSticks1(PlayerTest.java:857)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1NightSticks2()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1NightSticks2', methodParameterTypes = '']
@@ -800,9 +757,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1NightSticks2(PlayerTest.java:866)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1NightSticks1D()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1NightSticks1D', methodParameterTypes = '']
@@ -814,9 +771,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1NightSticks1D(PlayerTest.java:972)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1NightSticks2D()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1NightSticks2D', methodParameterTypes = '']
@@ -828,9 +785,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1NightSticks2D(PlayerTest.java:981)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms1D()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookNightMushrooms1D', methodParameterTypes = '']
@@ -841,9 +798,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookNightMushrooms1D(PlayerTest.java:1197)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookNightMushrooms2D()
@@ -855,9 +812,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookNightMushrooms2D(PlayerTest.java:1204)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter1()
@@ -869,9 +826,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsButter1(PlayerTest.java:1279)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter2()
@@ -883,9 +840,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsButter2(PlayerTest.java:1288)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks2()
@@ -898,9 +855,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1MixedNightSticks2(PlayerTest.java:892)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks5()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks5', methodParameterTypes = '']
@@ -912,9 +869,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1MixedNightSticks5(PlayerTest.java:917)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsCiderScore()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsCiderScore', methodParameterTypes = '']
@@ -926,9 +883,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsCiderScore(PlayerTest.java:1527)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonDisplay()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonDisplay', methodParameterTypes = '']
@@ -939,9 +896,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:162)
        board.PlayerTest.cookMushroomsEnoughPanonDisplay(PlayerTest.java:1165)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter1Score()
@@ -954,9 +911,9 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsButter1Score(PlayerTest.java:1503)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsButter2Score()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsButter2Score', methodParameterTypes = '']
@@ -968,12 +925,12 @@ Failures (41):
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsButter2Score(PlayerTest.java:1515)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       java.base/java.lang.reflect.Method.invoke(Method.java:566)
        [...]
 
-Test run finished after 740 ms
+Test run finished after 585 ms
 [        55 containers found      ]
 [         0 containers skipped    ]
 [        55 containers started    ]
@@ -984,6 +941,6 @@ Test run finished after 740 ms
 [         0 tests skipped         ]
 [       310 tests started         ]
 [         0 tests aborted         ]
-[       269 tests successful      ]
-[        41 tests failed          ]
+[       270 tests successful      ]
+[        40 tests failed          ]
 

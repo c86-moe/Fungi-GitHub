@@ -164,34 +164,35 @@ public class Player {
         int numButter = 0;
         int numMushrooms = 0;
         String mushroomName = "undefined";
-        for(int i=0;i<this_array.size();i++){
-            if(this_array.get(i).getType()==CardType.PAN){
+
+        for(Card c : this_array){
+            if(c.getType()==CardType.PAN){
                 if(panInList){
                     panInList = true;
                 } else {
                     return false;
                 }
             }
-            if(this_array.get(i).getType()==CardType.DAYMUSHROOM){
-                if(mushroomName!="undefined"&&mushroomName!=this_array.get(i).getName()){
+            if(c.getType()==CardType.DAYMUSHROOM){
+                if(mushroomName!="undefined"&&mushroomName!=c.getName()){
                     return false;
                 }else{
-                    mushroomName=this_array.get(i).getName();
+                    mushroomName=c.getName();
                 }
                 numMushrooms++;
             }
-            if(this_array.get(i).getType()==CardType.NIGHTMUSHROOM){
-                if(mushroomName!="undefined"&&mushroomName!=this_array.get(i).getName()){
+            if(c.getType()==CardType.NIGHTMUSHROOM){
+                if(mushroomName!="undefined"&&mushroomName!=c.getName()){
                     return false;
                 }else{
-                    mushroomName=this_array.get(i).getName();
+                    mushroomName=c.getName();
                 }
                 numMushrooms+=2;
             }
-            if(this_array.get(i).getType()==CardType.CIDER){
+            if(c.getType()==CardType.CIDER){
                 numCider++;
             }
-            if(this_array.get(i).getType()==CardType.CIDER){
+            if(c.getType()==CardType.CIDER){
                 numButter++;
             }
         }
@@ -202,7 +203,7 @@ public class Player {
             }
         }
         // Eligiability Check:
-        if(!(panInDisplay && panInList)){
+        if(!panInDisplay && !panInList){
             return false;
         }
         if(numMushrooms<3){
@@ -219,6 +220,7 @@ public class Player {
                 score += ((EdibleItem)c).getFlavourPoints();
             }
             if(getHand().removeElement(c)==false){
+                System.out.println("Can not remove card specified.");
                 return false;
             }
         }
