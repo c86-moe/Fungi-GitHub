@@ -118,6 +118,9 @@ public class Player {
                 numBaskets++;
             }
         }
+        if(handlimit<h.size()){
+            return false;
+        }
         if((handlimit+numBaskets*2)>=(h.size()+decayPile.size()-numBaskets)){
             for(Card c : decayPile){
                 if(c.getType()==CardType.BASKET){
@@ -129,6 +132,8 @@ public class Player {
             decayPile.clear();
             return true;
         }else{
+            // System.out.println("Decay False: hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
+            // It appears that tests are not passing for other reasons not related with this code - handlimits are being exceeded.
             return false;
         }
     }
