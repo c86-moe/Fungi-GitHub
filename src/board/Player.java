@@ -82,12 +82,7 @@ public class Player {
         if(this_card.getType()==CardType.BASKET || this_card.getType()==CardType.STICK){
             addCardtoDisplay(this_card);
         } else {
-            getDisplay();
-            if(h.size()>=handlimit){
-                System.out.println("Hand limit reached. Cannot add card to hand.");
-            }else{
-                h.add(this_card);
-            }
+            h.add(this_card);
         }
         return;
     }
