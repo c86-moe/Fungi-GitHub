@@ -1,3 +1,43 @@
+Decay True : hl=8bk=1hs=10ds=0
+Decay False: hl=8bk=1hs=10ds=3
+Decay True : hl=8bk=1hs=9ds=0
+Decay False: hl=8bk=1hs=8ds=4
+Decay False: hl=8bk=1hs=9ds=4
+Decay False: hl=8bk=1hs=10ds=4
+Decay False: hl=8bk=1hs=11ds=4
+Decay False: hl=8bk=1hs=11ds=3
+Decay True : hl=8bk=1hs=8ds=0
+Decay True : hl=10bk=2hs=8ds=0
+Decay True : hl=12bk=3hs=8ds=0
+Decay True : hl=14bk=4hs=8ds=0
+Decay True : hl=8bk=0hs=5ds=0
+Decay True : hl=8bk=0hs=6ds=0
+Decay True : hl=8bk=0hs=7ds=0
+Decay True : hl=8bk=0hs=8ds=0
+Decay True : hl=8bk=0hs=7ds=0
+Decay True : hl=8bk=0hs=8ds=0
+Decay True : hl=8bk=0hs=8ds=0
+Decay False: hl=8bk=0hs=9ds=1
+Decay False: hl=8bk=0hs=9ds=2
+Decay False: hl=8bk=0hs=12ds=1
+Decay False: hl=8bk=0hs=12ds=2
+Decay False: hl=8bk=0hs=8ds=1
+Decay False: hl=8bk=0hs=8ds=2
+Decay False: hl=8bk=0hs=8ds=3
+Decay False: hl=8bk=0hs=8ds=4
+Decay False: hl=8bk=0hs=6ds=3
+Decay False: hl=8bk=0hs=6ds=4
+Decay False: hl=8bk=0hs=7ds=2
+Decay False: hl=8bk=0hs=7ds=3
+Decay False: hl=8bk=0hs=7ds=4
+Decay False: hl=8bk=0hs=9ds=3
+Decay False: hl=8bk=0hs=9ds=4
+Decay False: hl=8bk=0hs=11ds=1
+Decay False: hl=8bk=0hs=11ds=2
+Decay False: hl=8bk=0hs=11ds=3
+Decay False: hl=8bk=0hs=11ds=4
+Decay False: hl=8bk=0hs=12ds=3
+Decay False: hl=8bk=0hs=12ds=4
 
 Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 
@@ -40,8 +80,8 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [34mcookMushroomsNotEnough2withPanonD()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookMushroomsNotEnough2withPanonH()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_17_checkhandmaxsize_basket(int)[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[2] 2[0m [32m✔[0m
+[36m│  │  │  ├─[0m [31m[1] 1[0m [31m✘[0m [31mexpected: <8> but was: <6>[0m
+[36m│  │  │  ├─[0m [31m[2] 2[0m [31m✘[0m [31mexpected: <8> but was: <6>[0m
 [36m│  │  │  ├─[0m [34m[3] 3[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[4] 4[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[5] 5[0m [32m✔[0m
@@ -60,10 +100,10 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [34msellMushrooms_notExistingMushroom3()[0m [32m✔[0m
 [36m│  │  ├─[0m [31mcookMushroomsCider()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [36mdecayWithBasketsHandLimit(int)[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[2] 2[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[3] 3[0m [32m✔[0m
-[36m│  │  │  └─[0m [34m[4] 4[0m [32m✔[0m
+[36m│  │  │  ├─[0m [31m[1] 1[0m [31m✘[0m [31mexpected: <8> but was: <10>[0m
+[36m│  │  │  ├─[0m [31m[2] 2[0m [31m✘[0m [31mexpected: <10> but was: <12>[0m
+[36m│  │  │  ├─[0m [31m[3] 3[0m [31m✘[0m [31mexpected: <12> but was: <14>[0m
+[36m│  │  │  └─[0m [31m[4] 4[0m [31m✘[0m [31mexpected: <14> but was: <16>[0m
 [36m│  │  ├─[0m [34mcookNotSameMushroomsDespiteHavingEnough()[0m [32m✔[0m
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonHandScoreBB_N()[0m [31m✘[0m [31mexpected: <0> but was: <-15>[0m
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonHandScoreCH_N()[0m [31m✘[0m [31mexpected: <0> but was: <-20>[0m
@@ -93,11 +133,11 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[4] 6[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[5] 7[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_37_checksticks(int)[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[1] 3[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[2] 4[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[3] 5[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[4] 6[0m [32m✔[0m
-[36m│  │  │  └─[0m [34m[5] 7[0m [32m✔[0m
+[36m│  │  │  ├─[0m [31m[1] 3[0m [31m✘[0m [31mexpected: <4> but was: <6>[0m
+[36m│  │  │  ├─[0m [31m[2] 4[0m [31m✘[0m [31mexpected: <4> but was: <6>[0m
+[36m│  │  │  ├─[0m [31m[3] 5[0m [31m✘[0m [31mexpected: <4> but was: <6>[0m
+[36m│  │  │  ├─[0m [31m[4] 6[0m [31m✘[0m [31mexpected: <4> but was: <6>[0m
+[36m│  │  │  └─[0m [31m[5] 7[0m [31m✘[0m [31mexpected: <4> but was: <6>[0m
 [36m│  │  ├─[0m [31mcookNightMushrooms1()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [31mcookNightMushrooms2()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [34mcookNightMushrooms3()[0m [32m✔[0m
@@ -138,7 +178,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [34mpanDown_onePan_PanRemovedfromHand()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookNotEnoughMushrooms()[0m [32m✔[0m
 [36m│  │  ├─[0m [34mcookMushroomsButterNotEnough1()[0m [32m✔[0m
-[36m│  │  ├─[0m [34mtakeFromForest_position3_1stick_checksticks()[0m [32m✔[0m
+[36m│  │  ├─[0m [31mtakeFromForest_position3_1stick_checksticks()[0m [31m✘[0m [31mexpected: <0> but was: <2>[0m
 [36m│  │  ├─[0m [36msellMushroomsCheckHand1(String)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] henofwoods[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[2] birchbolete[0m [32m✔[0m
@@ -200,13 +240,13 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [31msellMushrooms1MixedNightSticks5D()[0m [31m✘[0m [31mexpected: <0> but was: <-6>[0m
 [36m│  │  ├─[0m [34msellMushrooms1MixedNightSticks6D()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_position1to8_1stick_checksticks(int)[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[2] 2[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[3] 4[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[4] 5[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[5] 6[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[6] 7[0m [32m✔[0m
-[36m│  │  │  └─[0m [34m[7] 8[0m [32m✔[0m
+[36m│  │  │  ├─[0m [31m[1] 1[0m [31m✘[0m [31mexpected: <0> but was: <1>[0m
+[36m│  │  │  ├─[0m [31m[2] 2[0m [31m✘[0m [31mexpected: <0> but was: <1>[0m
+[36m│  │  │  ├─[0m [31m[3] 4[0m [31m✘[0m [31mexpected: <0> but was: <1>[0m
+[36m│  │  │  ├─[0m [31m[4] 5[0m [31m✘[0m [31mexpected: <0> but was: <1>[0m
+[36m│  │  │  ├─[0m [31m[5] 6[0m [31m✘[0m [31mexpected: <0> but was: <1>[0m
+[36m│  │  │  ├─[0m [31m[6] 7[0m [31m✘[0m [31mexpected: <0> but was: <1>[0m
+[36m│  │  │  └─[0m [31m[7] 8[0m [31m✘[0m [31mexpected: <0> but was: <1>[0m
 [36m│  │  ├─[0m [34mcookMushroomsNotEnough0withNoPan()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mpanDown_Pan_PanOnDisplay(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 2[0m [32m✔[0m
@@ -220,11 +260,11 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonHand()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
 [36m│  │  ├─[0m [31msellMushrooms1NightSticks1()[0m [31m✘[0m [31mexpected: <0> but was: <-2>[0m
 [36m│  │  ├─[0m [31msellMushrooms1NightSticks2()[0m [31m✘[0m [31mexpected: <0> but was: <-4>[0m
-[36m│  │  ├─[0m [34msellMushrooms1NightSticks3()[0m [32m✔[0m
-[36m│  │  ├─[0m [34msellMushroomsSticks1()[0m [32m✔[0m
-[36m│  │  ├─[0m [34msellMushroomsSticks2()[0m [32m✔[0m
-[36m│  │  ├─[0m [34msellMushroomsSticks3()[0m [32m✔[0m
-[36m│  │  ├─[0m [34msellMushroomsSticks4()[0m [32m✔[0m
+[36m│  │  ├─[0m [31msellMushrooms1NightSticks3()[0m [31m✘[0m [31mexpected: <0> but was: <-1>[0m
+[36m│  │  ├─[0m [31msellMushroomsSticks1()[0m [31m✘[0m [31mexpected: <0> but was: <-1>[0m
+[36m│  │  ├─[0m [31msellMushroomsSticks2()[0m [31m✘[0m [31mexpected: <0> but was: <-1>[0m
+[36m│  │  ├─[0m [31msellMushroomsSticks3()[0m [31m✘[0m [31mexpected: <0> but was: <-1>[0m
+[36m│  │  ├─[0m [31msellMushroomsSticks4()[0m [31m✘[0m [31mexpected: <0> but was: <-1>[0m
 [36m│  │  ├─[0m [31msellMushrooms1NightSticks1D()[0m [31m✘[0m [31mexpected: <0> but was: <-2>[0m
 [36m│  │  ├─[0m [31msellMushrooms1NightSticks2D()[0m [31m✘[0m [31mexpected: <0> but was: <-4>[0m
 [36m│  │  ├─[0m [34msellMushrooms1NightSticks3D()[0m [32m✔[0m
@@ -238,9 +278,9 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
 [36m│  │  │  └─[0m [34m[2] 2[0m [32m✔[0m
 [36m│  │  ├─[0m [31msellMushrooms1MixedNightSticks2()[0m [31m✘[0m [31mexpected: <0> but was: <-4>[0m
-[36m│  │  ├─[0m [34msellMushrooms1MixedNightSticks3()[0m [32m✔[0m
+[36m│  │  ├─[0m [31msellMushrooms1MixedNightSticks3()[0m [31m✘[0m [31mexpected: <0> but was: <-1>[0m
 [36m│  │  ├─[0m [31msellMushrooms1MixedNightSticks5()[0m [31m✘[0m [31mexpected: <0> but was: <-6>[0m
-[36m│  │  ├─[0m [34msellMushrooms1MixedNightSticks6()[0m [32m✔[0m
+[36m│  │  ├─[0m [31msellMushrooms1MixedNightSticks6()[0m [31m✘[0m [31mexpected: <0> but was: <-1>[0m
 [36m│  │  ├─[0m [34mcookMushroomsEnoughNoPanonDisplay()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mdecayPileUpdate(int)[0m [32m✔[0m
 [36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
@@ -315,8 +355,8 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m│  │  ├─[0m [34msellMushroomsSticks3D()[0m [32m✔[0m
 [36m│  │  ├─[0m [34msellMushroomsSticks4D()[0m [32m✔[0m
 [36m│  │  ├─[0m [36mtakeFromForest_12_checksticks(int)[0m [32m✔[0m
-[36m│  │  │  ├─[0m [34m[1] 1[0m [32m✔[0m
-[36m│  │  │  └─[0m [34m[2] 2[0m [32m✔[0m
+[36m│  │  │  ├─[0m [31m[1] 1[0m [31m✘[0m [31mexpected: <4> but was: <5>[0m
+[36m│  │  │  └─[0m [31m[2] 2[0m [31m✘[0m [31mexpected: <4> but was: <5>[0m
 [36m│  │  ├─[0m [34mcookNightMushrooms1DNonEd()[0m [32m✔[0m
 [36m│  │  ├─[0m [31mcookMushroomsCiderScore()[0m [31m✘[0m [31mexpected: <0> but was: <-20>[0m
 [36m│  │  ├─[0m [31mcookMushroomsEnoughPanonDisplay()[0m [31m✘[0m [31mexpected: <true> but was: <false>[0m
@@ -368,7 +408,7 @@ Thanks for using JUnit! Support its development at https://junit.org/sponsoring
 [36m      ├─[0m [34mnumberOfDayMushroomCardsAfterCardSetUp[0m [32m✔[0m
 [36m      └─[0m [34mnumberOfDayMushroomCardsBeforeCardSetUp[0m [32m✔[0m
 
-Failures (47):
+Failures (75):
   JUnit Jupiter:PlayerTest:sellMushrooms1Night(String):[1] hen of woods
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1Night', methodParameterTypes = 'java.lang.String']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -406,6 +446,34 @@ Failures (47):
        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsCiderandButterScore(PlayerTest.java:1540)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_17_checkhandmaxsize_basket(int):[1] 1
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_17_checkhandmaxsize_basket', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <8> but was: <6>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_17_checkhandmaxsize_basket(PlayerTest.java:332)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_17_checkhandmaxsize_basket(int):[2] 2
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_17_checkhandmaxsize_basket', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <8> but was: <6>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_17_checkhandmaxsize_basket(PlayerTest.java:332)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -466,6 +534,62 @@ Failures (47):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+       [...]
+  JUnit Jupiter:PlayerTest:decayWithBasketsHandLimit(int):[1] 1
+    MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBasketsHandLimit', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <8> but was: <10>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.decayWithBasketsHandLimit(PlayerTest.java:500)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:decayWithBasketsHandLimit(int):[2] 2
+    MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBasketsHandLimit', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <10> but was: <12>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.decayWithBasketsHandLimit(PlayerTest.java:500)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:decayWithBasketsHandLimit(int):[3] 3
+    MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBasketsHandLimit', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <12> but was: <14>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.decayWithBasketsHandLimit(PlayerTest.java:500)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:decayWithBasketsHandLimit(int):[4] 4
+    MethodSource [className = 'board.PlayerTest', methodName = 'decayWithBasketsHandLimit', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <14> but was: <16>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.decayWithBasketsHandLimit(PlayerTest.java:500)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHandScoreBB_N()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHandScoreBB_N', methodParameterTypes = '']
@@ -532,6 +656,76 @@ Failures (47):
        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.cookMushroomsEnoughPanonHandScoreSH_N(PlayerTest.java:1458)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_37_checksticks(int):[1] 3
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_37_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <4> but was: <6>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_37_checksticks(PlayerTest.java:266)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_37_checksticks(int):[2] 4
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_37_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <4> but was: <6>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_37_checksticks(PlayerTest.java:266)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_37_checksticks(int):[3] 5
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_37_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <4> but was: <6>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_37_checksticks(PlayerTest.java:266)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_37_checksticks(int):[4] 6
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_37_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <4> but was: <6>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_37_checksticks(PlayerTest.java:266)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_37_checksticks(int):[5] 7
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_37_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <4> but was: <6>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_37_checksticks(PlayerTest.java:266)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -733,6 +927,20 @@ Failures (47):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position3_1stick_checksticks()
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position3_1stick_checksticks', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <2>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position3_1stick_checksticks(PlayerTest.java:255)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
   JUnit Jupiter:PlayerTest:decayLegit_4(int):[1] 1
     MethodSource [className = 'board.PlayerTest', methodName = 'decayLegit_4', methodParameterTypes = 'int']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -817,6 +1025,104 @@ Failures (47):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position1to8_1stick_checksticks(int):[1] 1
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position1to8_1stick_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position1to8_1stick_checksticks(PlayerTest.java:245)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position1to8_1stick_checksticks(int):[2] 2
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position1to8_1stick_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position1to8_1stick_checksticks(PlayerTest.java:245)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position1to8_1stick_checksticks(int):[3] 4
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position1to8_1stick_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position1to8_1stick_checksticks(PlayerTest.java:245)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position1to8_1stick_checksticks(int):[4] 5
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position1to8_1stick_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position1to8_1stick_checksticks(PlayerTest.java:245)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position1to8_1stick_checksticks(int):[5] 6
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position1to8_1stick_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position1to8_1stick_checksticks(PlayerTest.java:245)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position1to8_1stick_checksticks(int):[6] 7
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position1to8_1stick_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position1to8_1stick_checksticks(PlayerTest.java:245)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_position1to8_1stick_checksticks(int):[7] 8
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_position1to8_1stick_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_position1to8_1stick_checksticks(PlayerTest.java:245)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
   JUnit Jupiter:PlayerTest:cookMushroomsEnoughPanonHand()
     MethodSource [className = 'board.PlayerTest', methodName = 'cookMushroomsEnoughPanonHand', methodParameterTypes = '']
     => org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -854,6 +1160,76 @@ Failures (47):
        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1NightSticks2(PlayerTest.java:866)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:sellMushrooms1NightSticks3()
+    MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1NightSticks3', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.sellMushrooms1NightSticks3(PlayerTest.java:875)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:sellMushroomsSticks1()
+    MethodSource [className = 'board.PlayerTest', methodName = 'sellMushroomsSticks1', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.sellMushroomsSticks1(PlayerTest.java:821)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:sellMushroomsSticks2()
+    MethodSource [className = 'board.PlayerTest', methodName = 'sellMushroomsSticks2', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.sellMushroomsSticks2(PlayerTest.java:830)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:sellMushroomsSticks3()
+    MethodSource [className = 'board.PlayerTest', methodName = 'sellMushroomsSticks3', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.sellMushroomsSticks3(PlayerTest.java:839)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:sellMushroomsSticks4()
+    MethodSource [className = 'board.PlayerTest', methodName = 'sellMushroomsSticks4', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.sellMushroomsSticks4(PlayerTest.java:848)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -957,6 +1333,20 @@ Failures (47):
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
+  JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks3()
+    MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks3', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.sellMushrooms1MixedNightSticks3(PlayerTest.java:901)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
   JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks5()
     MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks5', methodParameterTypes = '']
     => org.opentest4j.AssertionFailedError: expected: <0> but was: <-6>
@@ -966,6 +1356,48 @@ Failures (47):
        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
        board.PlayerTest.sellMushrooms1MixedNightSticks5(PlayerTest.java:917)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:sellMushrooms1MixedNightSticks6()
+    MethodSource [className = 'board.PlayerTest', methodName = 'sellMushrooms1MixedNightSticks6', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <0> but was: <-1>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.sellMushrooms1MixedNightSticks6(PlayerTest.java:926)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_12_checksticks(int):[1] 1
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_12_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <4> but was: <5>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_12_checksticks(PlayerTest.java:277)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:568)
+       [...]
+  JUnit Jupiter:PlayerTest:takeFromForest_12_checksticks(int):[2] 2
+    MethodSource [className = 'board.PlayerTest', methodName = 'takeFromForest_12_checksticks', methodParameterTypes = 'int']
+    => org.opentest4j.AssertionFailedError: expected: <4> but was: <5>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+       board.PlayerTest.takeFromForest_12_checksticks(PlayerTest.java:277)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1028,7 +1460,7 @@ Failures (47):
        java.base/java.lang.reflect.Method.invoke(Method.java:568)
        [...]
 
-Test run finished after 310 ms
+Test run finished after 327 ms
 [        55 containers found      ]
 [         0 containers skipped    ]
 [        55 containers started    ]
@@ -1039,6 +1471,6 @@ Test run finished after 310 ms
 [         0 tests skipped         ]
 [       310 tests started         ]
 [         0 tests aborted         ]
-[       263 tests successful      ]
-[        47 tests failed          ]
+[       235 tests successful      ]
+[        75 tests failed          ]
 

@@ -29,25 +29,30 @@ public class Player {
     }
 
     public void addSticks(int num_sticks){
-        sticks += num_sticks;
         for(int i = 0; i < num_sticks; i++){
             d.add(new cards.Stick());
         }
+        getDisplay();
         return;
     }
 
     public void removeSticks(int num_sticks){
-        sticks -= num_sticks;
+        getDisplay();
+        if(sticks<num_sticks){
+            return;
+        }
         for(int i=0;i<d.size();i++){
             if(d.getElementAt(i).getType()==CardType.STICK){
                 d.removeElement(i);
                 i--;
                 num_sticks--;
                 if(num_sticks == 0){
+                    getDisplay();
                     return;
                 }
             }
         }
+        getDisplay();
         return;
     }
 
@@ -56,6 +61,16 @@ public class Player {
     }
 
     public Display getDisplay() {
+        handlimit = 8;
+        sticks = 0;
+        for(int i=0; i<d.size(); i++){
+            if(d.getElementAt(i).getType()==CardType.BASKET){
+                handlimit+=2;
+            }
+            if(d.getElementAt(i).getType()==CardType.STICK){
+                sticks++;
+            }
+        }
         return d;
     }
 
@@ -65,18 +80,14 @@ public class Player {
     }
 
     public void addCardtoDisplay(Card this_card){
-        if(this_card.getType() == CardType.BASKET){
-            handlimit += 2;   
-        }
-        if(this_card.getType() == CardType.STICK){
-            sticks++;   
-        }
         d.add(this_card);
+        getDisplay();
         return;
     }
 
     // Tests passed.
     public boolean takeCardFromTheForest(int this_index){
+        getDisplay();
         if(this_index<=0 || this_index>Board.getForest().size()){
             return false;
         }
@@ -118,9 +129,6 @@ public class Player {
                 numBaskets++;
             }
         }
-        if(handlimit<h.size()){
-            return false;
-        }
         if((handlimit+numBaskets*2)>=(h.size()+decayPile.size()-numBaskets)){
             for(Card c : decayPile){
                 if(c.getType()==CardType.BASKET){
@@ -130,9 +138,10 @@ public class Player {
                 }
             }
             decayPile.clear();
+            System.out.println("Decay True : hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
             return true;
         }else{
-            // System.out.println("Decay False: hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
+            System.out.println("Decay False: hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
             // It appears that tests are not passing for other reasons not related with this code - handlimits are being exceeded.
             return false;
         }
@@ -272,7 +281,7 @@ public class Player {
         for(int i=0;i<hand_size;i++){
             if(h.getElementAt(i).getType()==CardType.PAN){
                 flag = true;
-                d.add(h.removeElement(i));
+                getDisplay().add(h.removeElement(i));
                 break;
             }
         }
