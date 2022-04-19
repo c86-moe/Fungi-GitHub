@@ -189,7 +189,7 @@ public class Player {
                 numMushrooms+=2;
             } else if(c.getType()==CardType.CIDER){
                 numCider++;
-            } else if(c.getType()==CardType.CIDER){
+            } else if(c.getType()==CardType.BUTTER){
                 numButter++;
             } else {
                 return false;
@@ -197,7 +197,7 @@ public class Player {
         }
         if(!panInList){
             for(int i=0;i<d.size();i++){
-                if(d.getElementAt(i).getType()==CardType.PAN){
+                if(getDisplay().getElementAt(i).getType()==CardType.PAN){
                     panInDisplay = true;
                     break;
                 }
@@ -214,15 +214,22 @@ public class Player {
             return false;
         }
         for(Card c : this_array){
-            if(c.getType()==CardType.NIGHTMUSHROOM){
-                score += ((EdibleItem)c).getFlavourPoints();
-                score += ((EdibleItem)c).getFlavourPoints();
-            }else{
-                score += ((EdibleItem)c).getFlavourPoints();
+            if(c.getType() != CardType.PAN){
+                if(c.getType()==CardType.NIGHTMUSHROOM){
+                    score += ((EdibleItem)c).getFlavourPoints();
+                    score += ((EdibleItem)c).getFlavourPoints();
+                }else{
+                    score += ((EdibleItem)c).getFlavourPoints();
+                }
             }
-            if(getHand().removeElement(c)==false){
-                System.out.println("Can not remove card specified.");
-                return false;
+            getHand().removeElement(c);
+        }
+        if(!panInList){
+            for(int i=0;i<getDisplay().size();i++){
+                if(d.getElementAt(i).getType()==CardType.PAN){
+                    d.removeElement(i);
+                    break;
+                }
             }
         }
         return true;
