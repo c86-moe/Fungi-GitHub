@@ -10,11 +10,15 @@ import cards.Mushroom;
 public class Player {
     private Hand h = new Hand();
     private Display d = new Display();
-    private int score = 0;
-    private int handlimit = 8;
-    private int sticks = 0;
+    private int score;
+    private int handlimit;
+    private int sticks;
     
-    public Player(){}
+    public Player(){
+        score = 0;
+        handlimit = 8;
+        sticks = 0;
+    }
     
     public int getScore(){
         return score;
@@ -75,7 +79,16 @@ public class Player {
     }
 
     public void addCardtoHand(Card this_card) {
-        h.add(this_card);
+        if(this_card.getType()==CardType.BASKET || this_card.getType()==CardType.STICK){
+            addCardtoDisplay(this_card);
+        } else {
+            getDisplay();
+            if(h.size()>=handlimit){
+                System.out.println("Hand limit reached. Cannot add card to hand.");
+            }else{
+                h.add(this_card);
+            }
+        }
         return;
     }
 
@@ -119,17 +132,19 @@ public class Player {
         }
         return true;
     }
-
-    // Tests not passing.
+    
+    // Tests passed.
     public boolean takeFromDecay(){
         int numBaskets = 0;
         ArrayList<Card> decayPile = Board.getDecayPile();
+        getDisplay();
         for(Card c : decayPile){
             if(c.getType()==CardType.BASKET){
                 numBaskets++;
             }
         }
         if((handlimit+numBaskets*2)>=(h.size()+decayPile.size()-numBaskets)){
+            // System.out.println("Decay True : hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
             for(Card c : decayPile){
                 if(c.getType()==CardType.BASKET){
                     addCardtoDisplay(c);
@@ -138,10 +153,9 @@ public class Player {
                 }
             }
             decayPile.clear();
-            System.out.println("Decay True : hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
             return true;
         }else{
-            System.out.println("Decay False: hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
+            // System.out.println("Decay False: hl="+handlimit+"bk="+numBaskets+"hs="+h.size()+"ds="+decayPile.size());
             // It appears that tests are not passing for other reasons not related with this code - handlimits are being exceeded.
             return false;
         }
@@ -204,11 +218,14 @@ public class Player {
         }
         for(Card c : this_array){
             if(c.getType()==CardType.NIGHTMUSHROOM){
-                score += ((EdibleItem)c).getFlavourPoints()*2;
+                score += ((EdibleItem)c).getFlavourPoints();
+                score += ((EdibleItem)c).getFlavourPoints();
             }else{
                 score += ((EdibleItem)c).getFlavourPoints();
             }
-            h.removeElement(c);   
+            if(getHand().removeElement(c)==false){
+                return false;
+            }
         }
         return true;
     }

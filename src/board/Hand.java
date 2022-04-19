@@ -24,7 +24,7 @@ public class Hand implements Displayable {
         // }
         return handList.remove(this_element);
     }
-    public void removeElement(Card this_card){
-        handList.remove(this_card);
+    public boolean removeElement(Card this_card){
+        return handList.remove(this_card);
     }
 }
